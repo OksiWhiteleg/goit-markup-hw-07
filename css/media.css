@@ -1,0 +1,207 @@
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 428px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero {
+        background-image: var(--bg-gradient), url(../images/hero-tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .hero-main {
+        font-size: 36px;
+        line-height: 1.11;
+        /* text-align: center; */
+    }
+
+    .pictures-title {
+        display: none;
+    }
+
+    .pictures-list {
+        display: none;
+    }
+
+    .pictures-section {
+        display: none;
+    }
+
+    .about-list {
+        gap: 72px 16px;
+        flex-wrap: wrap;
+    }
+
+    .about-title {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.1;
+    }
+
+    .team-list {
+        gap: 72px 16px;
+        flex-wrap: wrap;
+    }
+
+    .list-icon-customers {
+        gap: 72px 16px;
+        flex-wrap: wrap;
+    }
+
+    .item-icon-customers {
+        width: calc((100% - 16px) / 2);
+        max-width: 190px;
+        flex-basis: calc(100% / 2 - 16px);
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .container-item {
+        gap: 72px;
+    }
+
+    .footer-input {
+        min-width: 398px;
+        padding-left: 15px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .hero {
+        background-image: var(--bg-gradient), url(../images/hero-tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: var(--bg-gradient), url(../images/hero-tab-2x.jpg);
+        }
+    }
+
+    .hero-main {
+        width: 496px;
+        font-size: 56px;
+    }
+
+    .pictures-title {
+        display: none;
+    }
+
+    .pictures-list {
+        display: none;
+    }
+
+    .pictures-section {
+        display: none;
+    }
+
+
+    .about-list {
+        gap: 72px 24px;
+        flex-wrap: wrap;
+    }
+
+    .about-page {
+        width: 264px;
+        height: 112px;
+        background: #F4F4FD;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .about-list li {
+        flex-basis: calc(100% / 2 - 16px);
+    }
+
+    .team-list {
+        gap: 72px 16px;
+        flex-wrap: wrap;
+        width: calc((100% - 72px) / 2);
+        flex-basis: calc(100% / 2 - 16px);
+    }
+
+    .list-icon-customers {
+        gap: 72px 16px;
+        flex-wrap: wrap;
+    }
+
+    .item-icon-customers {
+        width: calc((100% - 16px) / 2);
+        max-width: 190px;
+        flex-basis: calc(100% / 2 - 16px);
+    }
+
+    .container-item {
+        padding: 0 108px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1158px;
+    }
+
+    .hero {
+        background-image: var(--bg-gradient), url(../images/hero-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: var(--bg-gradient), url(../images/hero-bg-2x.jpg);
+        }
+    }
+}
+
+
+.hero-main {
+    width: 496px;
+}
+
+.pictures-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-navy-blue);
+    margin-bottom: 72px;
+}
+
+.pictures-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.pictures-section {
+    padding-top: none;
+    padding-bottom: 120px;
+}
