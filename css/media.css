@@ -103,10 +103,19 @@
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
+        /* margin-left: 36px; */
+    }
+
+    .header {
+        padding-bottom: 12px;
     }
 
     .header-list {
         gap: 40px;
+        display: flex;
+    }
+
+    .header-link {
         display: flex;
     }
 
@@ -131,7 +140,9 @@
 
     .header-address-list {
         justify-content: flex-end;
-        gap: 40px;
+        gap: 6px;
+        display: flex;
+        flex-direction: column;
     }
 
     .current {
@@ -172,9 +183,9 @@
     .header-mail {
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
         color: var(--color-slate);
         text-decoration: none;
         transition-property: color;
@@ -270,11 +281,25 @@
     .footer-button {
         margin-top: 0;
     }
+
+    .subscribe-text {
+        text-align: start;
+    }
+
+    .subscribe.container {
+        margin-left: 50px;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1158px;
+    }
+
+    .header {
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .header-list {
@@ -292,9 +317,37 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    .current {
+        position: relative;
+        color: #404bbf;
+    }
+
+    .current::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #404bbf;
+
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -28px;
+    }
+
     .header-address-list {
         justify-content: flex-end;
         gap: 40px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .header-mail {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
     }
 
     .hero {
@@ -327,6 +380,21 @@
         margin-bottom: 8px;
     }
 
+    .about-list li {
+        flex-basis: calc(100% / 4 - 32px);
+    }
+
+    .about-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--color-navy-blue);
+        margin-bottom: 8px;
+        text-align: start;
+
+    }
+
     .pictures-title {
         font-weight: 700;
         font-size: 36px;
@@ -347,6 +415,17 @@
     .pictures-section {
         padding-top: none;
         padding-bottom: 120px;
+    }
+
+    .item-icon-customers {
+        width: calc((100% - 16px) / 2);
+        max-width: 168px;
+        flex-basis: calc(100% / 2 - 16px);
+    }
+
+    .team-list {
+        width: 100%;
+        flex-wrap: nowrap;
     }
 
     .footer-container {
@@ -391,6 +470,7 @@
 
     .footer-soc-list {
         justify-self: start;
+
     }
 
     .subscribe-text {
