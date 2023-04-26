@@ -77,6 +77,7 @@
 
     .container-item {
         gap: 72px;
+        /* flex-wrap: nowrap; */
     }
 
     .footer-input {
@@ -255,11 +256,19 @@
     }
 
     .container-item {
-        padding: 0 108px;
+        /* padding: 0 108px; */
     }
 
     .input-button {
         display: flex;
+    }
+
+    .footer-input {
+        min-width: 264px;
+    }
+
+    .footer-button {
+        margin-top: 0;
     }
 }
 
@@ -359,10 +368,34 @@
 
     .container-item {
         display: flex;
+        gap: 72px;
+        flex-wrap: nowrap;
     }
 
     .footer-container {
-        margin-right: 120px;
+        /* margin-right: 120px; */
 
     }
+
+    .footer-input {
+        min-width: 264px;
+    }
+
+    .footer-button {
+        margin-top: 0;
+    }
+
+    .footer-title {
+        text-align: start;
+    }
+
+    .footer-soc-list {
+        justify-self: start;
+    }
+
+    .subscribe-text {
+        text-align: start;
+    }
+
+
 }
