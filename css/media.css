@@ -81,9 +81,14 @@
 
     .container-item {
         gap: 72px 24px;
-        width: 398px;
+        /* width: 398px; */
         /* justify-content: flex-start; */
         /* flex-wrap: nowrap; */
+    }
+
+    .subscribe {
+        width: 398px;
+
     }
 
     .footer-input {
@@ -294,7 +299,7 @@
     }
 
     .footer-input {
-        width: 264px;
+        min-width: 264px;
     }
 
     .footer-button {
