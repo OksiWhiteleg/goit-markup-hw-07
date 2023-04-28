@@ -80,7 +80,9 @@
     }
 
     .container-item {
-        gap: 72px;
+        gap: 72px 24px;
+        width: 398px;
+        /* justify-content: flex-start; */
         /* flex-wrap: nowrap; */
     }
 
@@ -102,10 +104,6 @@
         justify-content: center;
     }
 
-    .footer-button {
-        margin-left: 104px;
-
-    }
 
 }
 
@@ -285,6 +283,10 @@
 
     .container-item {
         /* padding: 0 108px; */
+        width: 552px;
+        justify-content: flex-start;
+        gap: 72px 24px;
+
     }
 
     .input-button {
